@@ -28,4 +28,10 @@ async function CheckSession(){
 
 	}	
 }
-		
+
+;(()=>{
+	let user = sessionStorage.user;
+	if(user !="admin"){
+		window.location.href="bye.html";
+	}
+})()
