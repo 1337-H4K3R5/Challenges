@@ -2,7 +2,7 @@ let session ;
 session = sessionStorage.user
 
 async function CheckSession(){
-	if(session != "admin"){
+	if(session != "admin" || session==""){
 		window.location.href = "bye.html";
 	}
 	else{
