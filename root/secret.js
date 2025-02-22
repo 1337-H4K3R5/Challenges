@@ -8,7 +8,7 @@ async function CheckSession(){
 	else{
 		let hash = document.getElementById("secretPhrase").value;
 
-		let response = await fetch("https://cb0a-60-254-81-203.ngrok-free.app/checkPassword",{
+		let response = await fetch("https://c9e5-60-254-81-203.ngrok-free.app/checkPassword",{
 			method:"POST",
 			headers: { "Content-Type": "application/json" },
 			body:JSON.stringify({ "hash": hash })
